@@ -1,0 +1,27 @@
+{ 
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "clang",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                "-I", "/opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka",
+                "-L", "/opt/homebrew/Cellar/librdkafka/2.3.0/lib",
+                "-l",
+                "rdkafka",
+                "-g"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
