@@ -25,21 +25,21 @@ To use kafka engine is necessary to install the lib for each OS, respectively, t
 On Mac OSX, install librdkafka with homebrew:
 
 ```bash
-$ brew install librdkafka
+  brew install librdkafka
 ```
 
 On Debian and Ubuntu, install librdkafka from the Confluent APT repositories,
 see instructions [here](https://docs.confluent.io/current/installation/installing_cp/deb-ubuntu.html#get-the-software) and then install librdkafka:
 
- ```bash
- $ apt install librdkafka-dev
- ```
+```bash
+  apt install librdkafka-dev
+```
 
 On RedHat, CentOS, Fedora, install librdkafka from the Confluent YUM repositories,
 instructions [here](https://docs.confluent.io/current/installation/installing_cp/rhel-centos.html#get-the-software) and then install librdkafka:
 
 ```bash
-$ yum install librdkafka-devel
+ yum install librdkafka-devel
 ```
 
 On Windows, reference [librdkafka.redist](https://www.nuget.org/packages/librdkafka.redist/) NuGet package in your Visual Studio project.
@@ -48,28 +48,28 @@ On Windows, reference [librdkafka.redist](https://www.nuget.org/packages/librdka
 - Python:
 
 ```
-conda create --name kafka python=3.11 -y
-conda activate kafka
-pip install -r requirements.txt
+    conda create --name kafka python=3.11 -y
+    conda activate kafka
+    pip install -r requirements.txt
 ```
 
 ```
-python sub.py
-python pub.py
+    python sub.py
+    python pub.py
 ```
 
 - C:
 
 ```
-clang  ./pub.c -o ./pub.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka -g 
+    clang  ./pub.c -o ./pub.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka -g 
 
-clang  ./sub.c -o ./sub.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka -g 
+    clang  ./sub.c -o ./sub.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka -g 
 ```
 
 - C++:
 
 ```
-clang++ -std=c++17  ./sub.cpp -o ./sub.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka++ -g 
+    clang++ -std=c++17  ./sub.cpp -o ./sub.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka++ -g 
 ```
 
 ## References
