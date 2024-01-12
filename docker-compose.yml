@@ -39,9 +39,6 @@ services:
     depends_on:
       - zookeeper
 
-
-
-
   kafka-ui:
 
     image: provectuslabs/kafka-ui
