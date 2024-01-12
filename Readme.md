@@ -70,6 +70,8 @@ On Windows, reference [librdkafka.redist](https://www.nuget.org/packages/librdka
 
 ```
     clang++ -std=c++17  ./sub.cpp -o ./sub.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka++ -g 
+    
+    clang++ -std=c++17  ./pub.cpp -o ./pub.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka++ -g 
 ```
 
 ## References
