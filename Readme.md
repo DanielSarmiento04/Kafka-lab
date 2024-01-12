@@ -26,7 +26,9 @@ Apache Kafka is a open source event streaming toolkit to make hard message proce
 
 cpp support
 
-clang  /Users/josedanielsarmientoblanco/Desktop/hobby/Kafka-lab/main.c -o /Users/josedanielsarmientoblanco/Desktop/hobby/Kafka-lab/main.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka -g 
+clang  ./main.c -o ./main.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka -g 
+clang  ./pub.c -o ./pub.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka -g 
+clang  ./sub.c -o ./sub.out -I /opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka -L /opt/homebrew/Cellar/librdkafka/2.3.0/lib -l rdkafka -g 
 
 
 ## References
