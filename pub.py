@@ -1,14 +1,11 @@
-# kproducer.py
-
 import datetime
-
 from kafka import KafkaProducer
 
 producer = KafkaProducer(bootstrap_servers='localhost:9093')
 
 try:
 
-    for _ in range(1_000_000):
+    for _ in range(10_000):
 
         the_dt = str(datetime.datetime.utcnow())
 
