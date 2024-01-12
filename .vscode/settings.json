@@ -4,6 +4,7 @@
         "charconv": "cpp",
         "string": "cpp",
         "vector": "cpp",
-        "rdkafka.h": "c"
+        "rdkafka.h": "c",
+        "signal.h": "c"
     }
 }

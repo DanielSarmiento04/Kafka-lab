@@ -11,8 +11,7 @@
                 "${fileDirname}/${fileBasenameNoExtension}.out",
                 "-I", "/opt/homebrew/Cellar/librdkafka/2.3.0/include/librdkafka",
                 "-L", "/opt/homebrew/Cellar/librdkafka/2.3.0/lib",
-                "-l",
-                "rdkafka",
+                "-l", "rdkafka",
                 "-g"
             ],
             "group": {
